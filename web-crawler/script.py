@@ -10,8 +10,8 @@ class MyItems(Item):
 
 class MySpider(CrawlSpider):
     name = "test-crawler"
-    target_domains = ["dev.to"] # INPUT CRAWLING DOMAIN HERE
-    start_urls = ["https://dev.to/"] # THE STARTING URL FOR THE CRAWLER
+    target_domains = ["dominionuniversity.edu.ng"] # INPUT CRAWLING DOMAIN HERE
+    start_urls = ["https://dominionuniversity.edu.ng/"] # THE STARTING URL FOR THE CRAWLER
     handle_httpstatus_list = [404,410,301,500] # If you know backend, it's only 200 by default. you can add more status to list sha
 
     # This section was added for optimization: I throttle the crawl speed to prevent hitting site too hard
